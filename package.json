@@ -2,7 +2,7 @@
   "name": "react-takehome",
   "version": "1.0.0",
   "description": "React take home challenge",
-  "main": "index.js",
+  "main": "index.js/",
   "scripts": {
     "webpack": "webpack",
     "start": "webpack serve",

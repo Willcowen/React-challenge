@@ -1,5 +1,6 @@
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 header {
@@ -8,6 +9,7 @@ header {
   width: 100%;
   padding: 15px 0;
   border-bottom: 1px solid grey;
+  background-color: white;
 }
 
 nav {
@@ -27,6 +29,10 @@ main {
 main section {
   width: 100%;
   max-width: 1200px;
+}
+
+.links {
+  text-decoration: none;
 }
 
 
@@ -54,14 +60,14 @@ main section {
   max-width: 20em;
 }
 
-/* .img-container {
-  max-width: 200px;
-} */
-
 .card-img {
   width: 250px;
   height: 200px;
   border: 1px solid #000;
   margin: 10px 0;
+}
+
+.title {
+  text-align: center;
 }
 
