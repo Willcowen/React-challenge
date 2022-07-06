@@ -1,14 +1,14 @@
 import React from "react";
 
-const Card = ({elephant}) => {
+const Card = ({ elephant }) => {
 
   return (
-    <div className='elephant-card'>
-      <img src={elephant.image} className='elephant-card-img' alt='elephant-picture' />
+    <li className='elephant-card' >
       <h1>{elephant.name}</h1>
-      <h2>{elephant.species}</h2>
+      <img className='card-img' src={elephant.image} alt='elephant-picture' />
+      <h2>Species: {elephant.species}</h2>
       <p>{elephant.note}</p>
-    </div>
+    </li>
   )
 }
 
