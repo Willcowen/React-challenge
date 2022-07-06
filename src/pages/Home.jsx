@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
+import CardList from '../components/CardList'
 import dummyData from '../dummyData.json'; // To be replaced with your api response data
 
 export const Home = () => {
@@ -37,15 +38,7 @@ export const Home = () => {
           columnGap: '20px',
         }}
       >
-        {elephants.map(function (elephant, index){
-          return <Card
-          image={elephant.image}
-          name={elephant.name}
-          note={elephant.note}
-          roles={dummyData.roles}
-          key={index}
-        />
-        })}
+        <CardList elephants={elephants} />
       </div>
     </>
   );
