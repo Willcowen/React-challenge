@@ -21,11 +21,13 @@ export const Home = () => {
       .then((json) => {
         console.log('elephants loaded!', json);
         const elephantsWithImage = json.filter(
-          (elephant) => elephant.image !== missingImgUrl && elephant.species !== 'Unavailable'
+          (elephant) => elephant.image !== missingImgUrl && elephant.species !== 'Unavailable' 
         );
         let elephantsCopy = [...elephants];
-        for (let i = 10; i < 20; i++) {
+        for (let i = 0; i < 20; i++) {
+          if (elephantsWithImage[i].name.length <= 5) {
           elephantsCopy.push(elephantsWithImage[i]);
+          }
         }
         setElephants(elephantsCopy);
       });
