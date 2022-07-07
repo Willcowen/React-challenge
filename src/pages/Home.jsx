@@ -15,7 +15,6 @@ export const Home = () => {
   }, []);
 
   const loadElephants = () => {
-
     fetch(proxy + apiUrl)
       .then((res) => res.json())
       .then((json) => {
@@ -35,7 +34,7 @@ export const Home = () => {
   console.log(elephants);
   return (
     <>
-      <h1 className="title">All About Elephants</h1>
+      <h1 className="title">All About Elephants...</h1>
       <div className='App'>
         <CardList elephants={elephants} />
       </div>
